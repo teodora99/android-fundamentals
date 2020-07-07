@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="project.client.internshipPlatform.RecycleViewInternshipActivity"
+
+    >
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/shr_search"
+        android:title="@string/shr_search_title"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/shr_filter"
+        android:title="@string/shr_filter_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/shr_menu"
+        android:title="Profile"
+        app:showAsAction="ifRoom"
+    />
+
+    <item
+        android:id="@+id/favoriteInternships"
+        android:title="Favourites"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/allInternshipsUser"
+        android:title="All Internships"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/applications"
+        android:title="Applications"
+        app:showAsAction="never"/>
+
+
+
+
+</menu>

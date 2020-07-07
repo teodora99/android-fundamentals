@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".adminActivity.UnapprovedInternships">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/app_bar"
+            style="@style/Widget.AppCompat.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/Widget.AppCompat.Toolbar"
+            app:title=" "
+            />
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="@color/colorAccent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/errorText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    There is no internship"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="                 here yet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title">
+
+        </TextView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".companyActivity.MyInternships"
+    >
+
+    <item
+        android:id="@+id/myInternships"
+        android:icon="@drawable/shr_menu"
+        android:title="My Internships"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/addInternship"
+        android:title="Add Internships"
+        app:showAsAction="never"/>
+
+</menu>

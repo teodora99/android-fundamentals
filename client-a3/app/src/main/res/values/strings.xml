@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Find your Internship</string>
+    <string name="shr_hint_username">Username</string>
+    <string name="shr_hint_password">Password</string>
+    <string name="shr_button_next">Next</string>
+    <string name="shr_button_cancel">Cancel</string>
+    <string name="shr_filter_title">Filter</string>
+    <string name="shr_search_title">Search</string>
+    <string name="shr_product_title">Title</string>
+    <string name="welcomeAdmin">Welcome!</string>
+    <string name="approve">Go take a look at the newly added internships!</string>
+    <string name="allInternships">Go do a check on the existing internships!</string>
+
+</resources>

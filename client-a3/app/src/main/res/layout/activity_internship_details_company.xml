@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.client.internshipPlatform.companyActivity.InternshipAdd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/app_bar"
+                style="@style/Widget.AppCompat.Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark"
+                app:popupTheme="@style/Widget.AppCompat.Toolbar"
+                app:title=" "
+                />
+
+            <TextView
+                android:id="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company"
+                android:background="@color/colorAccent">
+            </TextView>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="6dp"
+            app:srcCompat="@drawable/shr_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="55dp"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textSize="6sp"
+            android:padding="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            style="@style/Widget.AppTheme.TextInputLayout"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Title"
+            android:padding="15dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleEdit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="text"
+                android:textSize="10dp"
+                android:maxLines="1"
+                android:padding="15dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            style="@style/Widget.AppTheme.TextInputLayout"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Description"
+            android:padding="15dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/detailsEdit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="text"
+                android:textSize="10dp"
+                android:maxLines="1"
+                android:padding="15dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/domainType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="301dp"
+            android:layout_height="255dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/startData"
+                style="@style/Widget.AppTheme.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Set Start Data"
+                android:padding="15dp"
+                android:textSize="10dp" />
+
+
+            <TextView
+                android:id="@+id/textStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="55dp"
+                android:layout_toEndOf="@+id/startData"
+                android:layout_toRightOf="@+id/startData"
+                android:padding="15dp"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/EndData"
+                style="@style/Widget.AppTheme.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/startData"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="26dp"
+                android:hint="Set End Data"
+                android:padding="15dp"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/startData"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="109dp"
+                android:layout_toEndOf="@+id/EndData"
+                android:layout_toRightOf="@+id/EndData"
+                android:padding="15dp"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/applyUntilDateButton"
+                style="@style/Widget.AppTheme.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EndData"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="26dp"
+                android:hint="Apply Until"
+                android:padding="15dp"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/applyUntilDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EndData"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="193dp"
+                android:layout_toEndOf="@+id/applyUntilDateButton"
+                android:layout_toRightOf="@+id/applyUntilDateButton"
+                android:padding="15dp"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add"
+                style="@style/Widget.AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:text="Edit"
+                android:textSize="8dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteButton"
+                style="@style/Widget.AppTheme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toStartOf="@+id/add"
+                android:layout_toLeftOf="@+id/add"
+                android:text="Delete"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
